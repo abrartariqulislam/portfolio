@@ -1,0 +1,115 @@
+/* ===================
+    Tablet Device style
+=======================*/
+@media (max-width:992px) {
+    /* common css */
+    .container{
+        max-width: 700px;
+        width: 100%;
+    }
+    /* header */
+    .inner_header nav ul{
+        display: none;
+    }
+    .inner_header nav a.bars{
+        display: inline-block;
+    }
+    /* banner */
+    #banner_section{
+        height: 100%;
+    }
+    .inner_banner{
+       flex-direction: column-reverse;
+       padding: 50px 0px;
+    }
+    .inner_banner .banner_img{
+        margin: 0 auto;
+    }
+
+    /* about */
+    .inner_about .about_content .content_text{
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .inner_about .about_content .content_address{
+        flex-basis: 100%;
+    }
+    /* portfolio */
+    .inner_portfolio{
+        column-gap: 3%;
+    }
+    .inner_portfolio div{
+        flex-basis: 48.5%;
+    }
+    /* contact */
+    .inner_contact .massage form input.text_feild{
+        flex-basis: 100%;
+    }
+    .inner_copyrigt .copy_text{
+       flex-direction: column;
+    }
+    .inner_copyrigt .copy_text p{
+        padding: 20px 0px;
+    }
+}
+/* ===================
+    Mobile Device style
+=======================*/
+@media (max-width:768px) {
+    /* common css */
+    .container{
+        max-width: 500px;
+        width: 100%;
+    }
+    /* banner */
+    .inner_banner .banner_content h1{
+        font-size: 36px;
+    }
+    .inner_banner .banner_content h3{
+        font-size: 24px;
+    }
+    .inner_banner .banner_content h3::before{
+        top: 15px;
+    }
+    .inner_banner .banner_img{
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .inner_banner .banner_img img{
+        max-width: 300px;
+        height: 100%;
+    }
+    /* about */
+    .inner_about .about_number{
+        flex-wrap: wrap;
+        padding: 50px 0px;
+    }
+    .inner_about .about_number .number_box{
+        margin: 0 0;
+        flex-basis: 50%;
+    }
+    .inner_about .about_number .number_box.responsive_border_zero{
+        border-left: none;
+        border-top: 1px solid var(--border_color);
+    }
+    .inner_about .about_number .number_box.responsive_border{
+        border-top: 1px solid var(--border_color);
+    }
+    /* service */
+    .inner_service .service_box{
+        flex-basis: 100%;
+    }
+    /* portfolio */
+    .inner_portfolio div{
+        flex-basis: 100%;
+    }
+    /* contact */
+    .inner_contact{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+   
+}
