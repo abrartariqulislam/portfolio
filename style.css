@@ -475,6 +475,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     justify-content: flex-start;
     column-gap: 10px;
+    position: relative;
  }
  .inner_contact .contact_info ul li{
     background-color: var(--primary_color);
@@ -485,6 +486,72 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     justify-content: center;
  }
+ /* =======Tooltip style start*/
+ .inner_contact .contact_info ul li .tooltip_dribble{
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    background-color: var(--primary_color);
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 20px;
+    z-index: 1;
+    display: none;
+    transition: 0.1s;
+ }
+ .inner_contact .contact_info ul li:hover .tooltip_dribble{
+    background-color: #fff;
+    color: var(--primary_color);
+ }
+ .inner_contact .contact_info ul li:hover .dribble{
+   display: inline-block;
+ }
+ .inner_contact .contact_info ul li .tooltip_dribble::after{
+    content: "";
+    position: absolute;
+    top:4px ;
+    left: 20px;
+    transform: rotate(45deg);
+    height: 35px;
+    width: 25px;
+    background-color: var(--primary_color);
+    z-index: -1;
+ }
+ .inner_contact .contact_info ul li:hover .tooltip_dribble::after{
+    background-color: #fff;
+ }
+ .inner_contact .contact_info ul li div.twiter{
+    top: 10;
+    left: 50px;
+ }
+ .inner_contact .contact_info ul li:hover div.twiter{
+    display: inline-block;
+ }
+ .inner_contact .contact_info ul li div.facebook{
+    top: -50px;
+    left: 100px;
+ }
+ .inner_contact .contact_info ul li:hover div.facebook{
+    display: inline-block;
+ }
+ .inner_contact .contact_info ul li div.google{
+    top: -50px;
+    left: 150px;
+ }
+ .inner_contact .contact_info ul li:hover div.google{
+    display: inline-block;
+ }
+ .inner_contact .contact_info ul li div.github{
+    top: -50px;
+    left: 200px;
+ }
+ .inner_contact .contact_info ul li:hover div.github{
+    display: inline-block;
+ }
+  /* =======Tooltip style end*/
  .inner_contact .contact_info ul li:hover{
     background-color: #fff;
  }
@@ -518,6 +585,7 @@ h1,h2,h3,h4,h5,h6{
     padding: 15px;
     border-radius: 10px;
     background-color: #000;
+    color: #fff;
     box-shadow: none;
     font-size: 18px;
     border: none;
@@ -532,6 +600,7 @@ h1,h2,h3,h4,h5,h6{
     padding: 15px;
     border-radius: 10px;
     background-color: #000;
+    color: #fff;
     font-size: 18px;
     border: none;
     box-shadow: 0 0 3px var(--text-color);
@@ -566,6 +635,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .inner_copyrigt .logo img{
     width: 50px;
@@ -586,6 +656,11 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.inner_copyrigt .copy_text .inner_copy_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .inner_copyrigt .copy_text p{
     color: #fff;
