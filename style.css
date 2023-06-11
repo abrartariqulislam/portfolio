@@ -487,12 +487,12 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
  }
  /* =======Tooltip style start*/
- .inner_contact .contact_info ul li .tooltip_dribble{
+ .inner_contact .contact_info ul li .tooltip{
     position: absolute;
     top: -50px;
     left: 0px;
-    background-color: var(--primary_color);
-    color: #fff;
+    background-color:#fff;
+    color: var(--primary_color);
     letter-spacing: 2px;
     line-height: 1.5em;
     font-weight: 500;
@@ -502,14 +502,7 @@ h1,h2,h3,h4,h5,h6{
     display: none;
     transition: 0.1s;
  }
- .inner_contact .contact_info ul li:hover .tooltip_dribble{
-    background-color: #fff;
-    color: var(--primary_color);
- }
- .inner_contact .contact_info ul li:hover .dribble{
-   display: inline-block;
- }
- .inner_contact .contact_info ul li .tooltip_dribble::after{
+ .inner_contact .contact_info ul li .tooltip::after{
     content: "";
     position: absolute;
     top:4px ;
@@ -517,12 +510,12 @@ h1,h2,h3,h4,h5,h6{
     transform: rotate(45deg);
     height: 35px;
     width: 25px;
-    background-color: var(--primary_color);
+    background-color:#fff;
     z-index: -1;
  }
- .inner_contact .contact_info ul li:hover .tooltip_dribble::after{
-    background-color: #fff;
- }
+ .inner_contact .contact_info ul li:hover .dribble{
+    display: inline-block;
+  }
  .inner_contact .contact_info ul li div.twiter{
     top: 10;
     left: 50px;
