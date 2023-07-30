@@ -81,11 +81,13 @@ h1,h2,h3,h4,h5,h6{
     justify-content: flex-end;
     
 }
-.inner_header nav a.bars{
+.inner_header nav .bars{
     color: #fff;
     font-size: 36px;
     font-weight: 700;
     display: none;
+    background-color: unset;
+    border: unset;
 }
 .inner_header nav ul.menu{
     display: flex;
@@ -134,7 +136,10 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     height: 100vh;
     padding: 50px;
-    display: ;
+    display:none ;
+}
+.menuBarDisplay{
+    display: flex;
 }
 .menuBar li a{
     display: inline-block;

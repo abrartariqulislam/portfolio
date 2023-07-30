@@ -11,7 +11,7 @@
     .inner_header nav ul.menu{
         display: none;
     }
-    .inner_header nav a.bars{
+    .inner_header nav .bars{
         display: inline-block;
     }
     /* banner */

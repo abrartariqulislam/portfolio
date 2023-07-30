@@ -9,6 +9,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
 <!-- =====header section start===== -->
@@ -31,18 +32,18 @@
                             <a href="#" class="enroll_btn">Enroll Now</a>
                         </li>
                     </ul>
-                    <a href="#" class="bars"><i class="fas fa-bars"></i></a>
+                    <button class="bars"><i class="fas fa-bars"></i></button>
                 </nav>
                 <!-- =======menu bar ====== -->
                     <ul class="menuBar">
-                        <li><a href="#banner_section" class="active">Home</a></li>
-                        <li><a href="#about_section">About</a></li>
-                        <li><a href="#service_section">Service</a></li>
-                        <li><a href="#portfolio_section">Portfolio</a></li>
+                        <li><a href="#banner_section" class="active" onclick="menuFaunc()">Home</a></li>
+                        <li><a href="#about_section"onclick="menuFaunc()" >About</a></li>
+                        <li><a href="#service_section" onclick="menuFaunc()">Service</a></li>
+                        <li><a href="#portfolio_section" onclick="menuFaunc()">Portfolio</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#contact_section">Contact</a></li>
+                        <li><a href="#contact_section" onclick="menuFaunc()">Contact</a></li>
                         <li>
-                            <a href="#" class="enroll_btn">Enroll Now</a>
+                            <a href="#" class="enroll_btn" onclick="menuFaunc()">Enroll Now</a>
                         </li>
                     </ul>
             </div>
