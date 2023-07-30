@@ -53,6 +53,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     justify-content: space-between;
     height: 80px;
+    position: relative;
 }
 .inner_header .logo{
     display: flex;
@@ -86,21 +87,21 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 700;
     display: none;
 }
-.inner_header nav ul{
+.inner_header nav ul.menu{
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
 }
-.inner_header nav ul li{
+.inner_header nav ul.menu li{
     margin-left: 20px;
     font-size: 16px;
 }
-.inner_header nav ul li .active{
+.inner_header nav ul.menu li .active{
     border-bottom: 2px solid var(--primary_color);
     color: var(--primary_color);
 }
-.inner_header nav ul li .enroll_btn{
+.inner_header nav ul.menu li .enroll_btn{
     font-size: 18px;
     font-weight: 700;
     line-height: 1.5em;
@@ -111,17 +112,52 @@ h1,h2,h3,h4,h5,h6{
     margin-left: 30px;
     transition: 0.1s;
 }
-.inner_header nav ul li .enroll_btn:hover{
+.inner_header nav ul.menu li .enroll_btn:hover{
     background-color: var(--primary_color);
     color: #fff;
 }
-.inner_header nav ul li a{
+.inner_header nav ul.menu li a{
     color: #ffffffd2;
     padding: 5px;
     transform: 0.1s;
 }
-.inner_header nav ul li a:hover{
+.inner_header nav ul.menu li a:hover{
     color: var(--primary_color);
+}
+.menuBar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: var(--background_color_1);
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+.menuBar li a{
+    display: inline-block;
+    color: #ffffffd2;
+    padding: 5px;
+    transform: 0.1s;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+}
+.menuBar li a:hover{
+    color: var(--primary_color);
+    background-color: #ffffff;
+}
+.menuBar li .enroll_btn{
+    color: var(--primary_color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5em;
+    transition: 0.1s;
+}
+.menuBar li .enroll_btn:hover{
+    background-color: var(--primary_color);
+    color: #fff;
 }
 /* ===================
     banner style

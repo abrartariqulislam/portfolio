@@ -8,7 +8,7 @@
         width: 100%;
     }
     /* header */
-    .inner_header nav ul{
+    .inner_header nav ul.menu{
         display: none;
     }
     .inner_header nav a.bars{
